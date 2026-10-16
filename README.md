@@ -2,10 +2,10 @@
 
 Outil SIG et analyse multicritère pour identifier où, et avec quel revêtement biosourcé, renouveler la voirie de Lyon. Il intègre des tests de robustesse et une prospective 2030-2050.
 
-**Voir en ligne :** [accueil](https://jauresmas.github.io/voirie-bas-carbone-lyon/) · [version grand public](https://jauresmas.github.io/voirie-bas-carbone-lyon/grand-public/) · [carte de séminaire](https://jauresmas.github.io/voirie-bas-carbone-lyon/webmap/)
+**Voir en ligne :** [accueil](https://jauresmas.github.io/voirie-bas-carbone-lyon/) · [version grand public](https://jauresmas.github.io/voirie-bas-carbone-lyon/grand-public/) · [version pour spécialistes](https://jauresmas.github.io/voirie-bas-carbone-lyon/webmap/)
 
 Le projet comprend deux cartes web :
-- une carte de séminaire pour présenter la méthode ;
+- une carte d'analyse pour les spécialistes, qui présente la méthode pas à pas ;
 - une version grand public pour les habitants.
 
 > **Étude de recherche, pas un programme de travaux.** Les propriétés des revêtements sont des hypothèses de travail et le calendrier des chantiers est simulé. Aucune décision de la Métropole de Lyon n'est associée à ces résultats.
@@ -14,7 +14,7 @@ Le projet comprend deux cartes web :
 
 Les deux pages s'ouvrent par double-clic, sans installation ni serveur. Une connexion internet sert uniquement au fond de plan IGN.
 
-### Carte de séminaire : `webmap/index.html`
+### Version pour spécialistes : `webmap/index.html`
 
 | Action | Commande |
 |---|---|
@@ -82,7 +82,7 @@ Le détail complet (formules, chiffres, limites) se trouve dans le **[rapport m�
 | `03_amc/` | Matrices AHP, poids par profil, résultats par tronçon, robustesse Monte-Carlo, sensibilité |
 | `04_prospective/` | Scénarios, trajectoires 2026-2050, état des tronçons par scénario |
 | `05_valorisation/` | Rapport méthodologique, résumé de communication, note de réunion, projet QGIS, 8 cartes A4 |
-| `webmap/` | Carte web de séminaire |
+| `webmap/` | Carte d'analyse, version pour spécialistes |
 | `grand-public/` | Version grand public |
 | `scripts/` | Chaîne de traitement Python reproductible |
 

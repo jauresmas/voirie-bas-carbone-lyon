@@ -151,7 +151,7 @@ components:
 
 Every screen is a figure plate from a research article: a ruled header, lettered panels (a, b, c) on a figure-white ground, shared colour bars, and a full "Fig. n |" caption whose numbers rewrite themselves as sliders, year scrubs and clicks change the data. The map is panel (a), not a full-bleed backdrop; charts are panels (b) and (c); the caption is set as article prose, not as KPI cards. Depth, chrome and decoration are replaced by the vocabulary of print figures: 1 px ink rules, panel letters in a cut corner, hairline grids and tabular figures.
 
-The system is dense on purpose. It is read from the back of a seminar room on a 16:9 projector and then interrogated up close on a laptop, so one root font size scales the whole plate (`clamp(13.5px, 0.62vw + 6px, 19px)`) and charts read that same factor. Colour carries data only: four Okabe-Ito hues name the four surfacings, single-hue ramps carry magnitudes, greys and line width carry robustness, and one reserved vermillion marks the guided course. Everything else is ink on paper.
+The system is dense on purpose. It is shown full-screen on a 16:9 screen or projector and then interrogated up close on a laptop, so one root font size scales the whole plate (`clamp(13.5px, 0.62vw + 6px, 19px)`) and charts read that same factor. Colour carries data only: four Okabe-Ito hues name the four surfacings, single-hue ramps carry magnitudes, greys and line width carry robustness, and one reserved vermillion marks the guided course. Everything else is ink on paper.
 
 Rejected by the world: the category default of a full-bleed dark basemap, a layer drawer and floating KPI cards; drop shadows; rounded cards.
 

@@ -44,4 +44,4 @@ Choix motivé par : (1) un îlot de chaleur urbain marqué (climat semi-continen
 | S8-S11 | Indicateurs, matrice matériau-territoire (avec partenaires matériaux) | Atelier matrice |
 | S12-S15 | AMC, pondérations par profils d'acteurs, robustesse | Comité de suivi |
 | S16-S19 | Scénarios prospectifs 2030-2050 | Atelier scénarios |
-| S20-S24 | Rapport, carte web, communication scientifique | Séminaire de recherche |
+| S20-S24 | Rapport, cartes web, communication scientifique | Mise en ligne des cartes web |
