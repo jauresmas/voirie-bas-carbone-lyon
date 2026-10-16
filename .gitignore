@@ -1,0 +1,16 @@
+# Données brutes (plusieurs centaines de Mo) : retéléchargées par scripts/01_collecte.py
+01_donnees/brutes/
+# Base géospatiale complète (137 Mo, > limite GitHub) : régénérée par scripts/02_base_donnees.py
+01_donnees/base_revetements.gpkg
+
+# Fichiers temporaires SIG et Python
+*.gpkg-wal
+*.gpkg-shm
+*.qgz~
+__pycache__/
+*.pyc
+
+# Configuration locale et notes de travail
+.claude/
+.impeccable/
+PRODUCT.md
