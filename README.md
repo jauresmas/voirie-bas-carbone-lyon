@@ -10,6 +10,32 @@ Le projet comprend deux cartes web :
 
 > **Étude de recherche, pas un programme de travaux.** Les propriétés des revêtements sont des hypothèses de travail et le calendrier des chantiers est simulé. Aucune décision de la Métropole de Lyon n'est associée à ces résultats.
 
+## Aperçu
+
+**Version grand public** : récit en six stations, recherche de sa rue, Lyon en 2050.
+
+<p align="center">
+  <img src="apercus/grand-public.jpg" alt="Version grand public : la carte de la chaleur des rues de Lyon" width="72%">
+  &nbsp;
+  <img src="apercus/grand-public-mobile.jpg" alt="Version grand public sur téléphone : fiche de la rue Bossuet" width="22%">
+</p>
+
+**Version pour spécialistes** : planche de figures, de la donnée à la prospective.
+
+<p align="center">
+  <img src="apercus/specialistes.jpg" alt="Version pour spécialistes : résumé graphique des priorités" width="49%">
+  <img src="apercus/specialistes-prospective.jpg" alt="Version pour spécialistes : trajectoires de déploiement 2026-2050" width="49%">
+</p>
+
+**Cartes A4** (projet QGIS, `05_valorisation/cartes/`) : cliquer sur une carte pour l'agrandir.
+
+<table>
+<tr><td align="center" width="50%"><a href="05_valorisation/cartes/carte1_trafic_pl.png"><img src="05_valorisation/cartes/carte1_trafic_pl.png" alt="1. Trafic poids lourds par tronçon" width="100%"></a><br><sub>1. Trafic poids lourds par tronçon</sub></td><td align="center" width="50%"><a href="05_valorisation/cartes/carte2_besoin_chaleur.png"><img src="05_valorisation/cartes/carte2_besoin_chaleur.png" alt="2. Besoin de rafraîchissement" width="100%"></a><br><sub>2. Besoin de rafraîchissement</sub></td></tr>
+<tr><td align="center" width="50%"><a href="05_valorisation/cartes/carte3_aptitude_R3.png"><img src="05_valorisation/cartes/carte3_aptitude_R3.png" alt="3. Aptitude à l'enrobé drainant" width="100%"></a><br><sub>3. Aptitude à l'enrobé drainant</sub></td><td align="center" width="50%"><a href="05_valorisation/cartes/carte4_priorites_equilibre.png"><img src="05_valorisation/cartes/carte4_priorites_equilibre.png" alt="4. Priorités et revêtement recommandé" width="100%"></a><br><sub>4. Priorités et revêtement recommandé</sub></td></tr>
+<tr><td align="center" width="50%"><a href="05_valorisation/cartes/carte5_robustesse.png"><img src="05_valorisation/cartes/carte5_robustesse.png" alt="5. Robustesse des priorités" width="100%"></a><br><sub>5. Robustesse des priorités</sub></td><td align="center" width="50%"><a href="05_valorisation/cartes/carte6_prospective_S3_2040.png"><img src="05_valorisation/cartes/carte6_prospective_S3_2040.png" alt="6. Déploiement en 2040 (transition)" width="100%"></a><br><sub>6. Déploiement en 2040 (transition)</sub></td></tr>
+<tr><td align="center" width="50%"><a href="05_valorisation/cartes/carte7_evolution_2050.png"><img src="05_valorisation/cartes/carte7_evolution_2050.png" alt="7. Évolution de l'aptitude d'ici 2050" width="100%"></a><br><sub>7. Évolution de l'aptitude d'ici 2050</sub></td><td align="center" width="50%"><a href="05_valorisation/cartes/carte8_programme_depart.png"><img src="05_valorisation/cartes/carte8_programme_depart.png" alt="8. Programme de départ" width="100%"></a><br><sub>8. Programme de départ</sub></td></tr>
+</table>
+
 ## Ouvrir les cartes web
 
 Les deux pages s'ouvrent par double-clic, sans installation ni serveur. Une connexion internet sert uniquement au fond de plan IGN.
