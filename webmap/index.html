@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Revêtements biosourcés à Lyon</title>
+<meta name="description" content="Outil d'aide à la décision SIG et analyse multicritère : où et avec quel revêtement biosourcé renouveler la voirie lyonnaise, robustesse et prospective 2030-2050.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fcfcfb'/%3E%3Crect x='3' y='3' width='26' height='26' fill='none' stroke='%2314181f' stroke-width='2'/%3E%3Cpath d='M7 22 L14 15 L19 19 L25 10' fill='none' stroke='%23E69F00' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="lib/maplibre-gl.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body data-mode="presentation">
+<div class="plate" id="plate">
+  <header class="plate-head">
+    <div class="titleblock">
+      <h1>Revêtements routiers à liants biosourcés&nbsp;: où, lesquels, avec quelle certitude&nbsp;?</h1>
+      <p class="byline">Projet de recherche · Lyon, 9 arrondissements · SIG et analyse multicritère</p>
+    </div>
+    <div class="head-controls">
+      <div class="seg" role="radiogroup" aria-label="Mode d'affichage">
+        <button type="button" role="radio" data-mode="presentation" aria-checked="true">Présentation</button>
+        <button type="button" role="radio" data-mode="exploration" aria-checked="false">Exploration</button>
+      </div>
+      <p class="figcount" aria-live="polite"><span id="figno">Fig. 0</span><span class="figof"> / <span id="figtot">9</span></span></p>
+    </div>
+  </header>
+
+  <nav class="rail" id="rail" aria-label="Missions et figures"></nav>
+
+  <main class="body">
+    <section class="panel panel-a" aria-labelledby="la">
+      <span class="letter" id="la">a</span>
+      <div id="map" class="map" role="application" aria-label="Carte des tronçons de voirie de Lyon"></div>
+      <div class="map-overlay map-legend" id="legend" aria-live="polite"></div>
+      <div class="map-overlay map-tools" id="maptools"></div>
+      <aside class="fiche" id="fiche" hidden aria-label="Fiche du tronçon sélectionné"></aside>
+      <div class="hovertip" id="hovertip" role="tooltip" hidden></div>
+      <p class="map-credit">Fond : IGN Plan (tuiles vectorielles) · Données : Métropole de Lyon, IGN, INSEE, Cerema, Géorisques</p>
+    </section>
+
+    <div class="column">
+      <section class="panel panel-b" aria-labelledby="lb">
+        <span class="letter" id="lb">b</span>
+        <button type="button" class="tabletoggle" data-panel="b" aria-pressed="false">Tableau</button>
+        <div class="panel-body" id="pb"></div>
+      </section>
+      <section class="panel panel-c" aria-labelledby="lc">
+        <span class="letter" id="lc">c</span>
+        <button type="button" class="tabletoggle" data-panel="c" aria-pressed="false">Tableau</button>
+        <div class="panel-body" id="pc"></div>
+      </section>
+      <figcaption class="caption" id="caption" aria-live="polite"></figcaption>
+    </div>
+  </main>
+
+  <footer class="nextband" id="nextband">
+    <button type="button" class="nb-prev" id="prev" aria-label="Figure précédente">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
+    </button>
+    <p class="nb-where" id="nbwhere"></p>
+    <button type="button" class="nb-next" id="next">
+      <span class="nb-label">Suivant</span>
+      <span class="nb-title" id="nbnext"></span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+    </button>
+  </footer>
+</div>
+
+<div class="loading" id="loading"><p>Chargement des 7&nbsp;702 tronçons…</p></div>
+
+<script src="lib/maplibre-gl.js"></script>
+<script src="lib/d3.min.js"></script>
+<script src="data/meta.js"></script>
+<script src="data/troncons.js"></script>
+<script src="data/grille.js"></script>
+<script src="data/contexte.js"></script>
+<script src="js/palette.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/figures.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
