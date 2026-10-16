@@ -1,0 +1,177 @@
+{
+ "profils": {
+  "equilibre": {
+   "nom": "Équilibré",
+   "acteur": "Comité de pilotage (référence)",
+   "poids": {
+    "chaleur": 0.2,
+    "sante": 0.2,
+    "eau": 0.2,
+    "carbone": 0.2,
+    "usages": 0.2
+   }
+  },
+  "adaptation": {
+   "nom": "Adaptation chaleur & santé",
+   "acteur": "Direction climat / santé publique",
+   "poids": {
+    "chaleur": 0.3475,
+    "sante": 0.3475,
+    "eau": 0.1201,
+    "carbone": 0.0647,
+    "usages": 0.1201
+   }
+  },
+  "bas_carbone": {
+   "nom": "Bas-carbone",
+   "acteur": "Gestionnaire de voirie / plan climat",
+   "poids": {
+    "chaleur": 0.1217,
+    "sante": 0.1217,
+    "eau": 0.1217,
+    "carbone": 0.5692,
+    "usages": 0.0657
+   }
+  },
+  "eau_sols": {
+   "nom": "Eau & sols",
+   "acteur": "Direction de l'eau / désimperméabilisation",
+   "poids": {
+    "chaleur": 0.1559,
+    "sante": 0.1559,
+    "eau": 0.4514,
+    "carbone": 0.0809,
+    "usages": 0.1559
+   }
+  },
+  "justice": {
+   "nom": "Justice environnementale",
+   "acteur": "Élus / politique de la ville",
+   "poids": {
+    "chaleur": 0.18,
+    "sante": 0.3454,
+    "eau": 0.0879,
+    "carbone": 0.0733,
+    "usages": 0.3134
+   }
+  }
+ },
+ "P": [
+  [
+   0.0,
+   0.0,
+   0.0,
+   0.75,
+   0.0
+  ],
+  [
+   0.9286,
+   0.9286,
+   0.0,
+   0.2083,
+   0.4643
+  ],
+  [
+   0.2214,
+   0.2214,
+   1.0,
+   0.1894,
+   0.6107
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   0.8333,
+   0.0
+  ]
+ ],
+ "materiaux": [
+  "R1",
+  "R2",
+  "R3",
+  "R4"
+ ],
+ "enjeux": [
+  "chaleur",
+  "sante",
+  "eau",
+  "carbone",
+  "usages"
+ ],
+ "monte_carlo": 1000,
+ "spearman": {
+  "equilibre": {
+   "equilibre": 1.0,
+   "adaptation": 0.907,
+   "bas_carbone": -0.035,
+   "eau_sols": 0.899,
+   "justice": 0.919
+  },
+  "adaptation": {
+   "equilibre": 0.907,
+   "adaptation": 1.0,
+   "bas_carbone": -0.258,
+   "eau_sols": 0.919,
+   "justice": 0.992
+  },
+  "bas_carbone": {
+   "equilibre": -0.035,
+   "adaptation": -0.258,
+   "bas_carbone": 1.0,
+   "eau_sols": -0.179,
+   "justice": -0.242
+  },
+  "eau_sols": {
+   "equilibre": 0.899,
+   "adaptation": 0.919,
+   "bas_carbone": -0.179,
+   "eau_sols": 1.0,
+   "justice": 0.929
+  },
+  "justice": {
+   "equilibre": 0.919,
+   "adaptation": 0.992,
+   "bas_carbone": -0.242,
+   "eau_sols": 0.929,
+   "justice": 1.0
+  }
+ },
+ "recouvrement_top20": {
+  "equilibre": {
+   "equilibre": 1.0,
+   "adaptation": 0.876,
+   "bas_carbone": 0.006,
+   "eau_sols": 0.64,
+   "justice": 0.889
+  },
+  "adaptation": {
+   "equilibre": 0.876,
+   "adaptation": 1.0,
+   "bas_carbone": 0.005,
+   "eau_sols": 0.585,
+   "justice": 0.907
+  },
+  "bas_carbone": {
+   "equilibre": 0.006,
+   "adaptation": 0.005,
+   "bas_carbone": 1.0,
+   "eau_sols": 0.003,
+   "justice": 0.005
+  },
+  "eau_sols": {
+   "equilibre": 0.64,
+   "adaptation": 0.585,
+   "bas_carbone": 0.003,
+   "eau_sols": 1.0,
+   "justice": 0.598
+  },
+  "justice": {
+   "equilibre": 0.889,
+   "adaptation": 0.907,
+   "bas_carbone": 0.005,
+   "eau_sols": 0.598,
+   "justice": 1.0
+  }
+ }
+}

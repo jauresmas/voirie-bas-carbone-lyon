@@ -1,0 +1,143 @@
+{
+ "P": [
+  [
+   0.0,
+   0.0,
+   0.0,
+   0.75,
+   0.0
+  ],
+  [
+   0.929,
+   0.929,
+   0.0,
+   0.208,
+   0.464
+  ],
+  [
+   0.221,
+   0.221,
+   1.0,
+   0.189,
+   0.611
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   0.833,
+   0.0
+  ]
+ ],
+ "enjeux": [
+  "chaleur",
+  "sante",
+  "eau",
+  "carbone",
+  "usages"
+ ],
+ "materiaux": [
+  "R1",
+  "R2",
+  "R3",
+  "R4"
+ ],
+ "relations": [
+  {
+   "critère territorial": "Trafic poids lourds (classe T0-T5)",
+   "nature de la relation": "Contrainte mécanique",
+   "R1": "T0:0.5 / T1:0.8 / T2:1 / T3:1 / T4:1 / T5:1",
+   "R2": "T0:0 / T1:0 / T2:0.25 / T3:0.6 / T4:1 / T5:1",
+   "R3": "T0:0 / T1:0 / T2:0.3 / T3:0.7 / T4:1 / T5:1",
+   "R4": "T0:1 / T1:1 / T2:1 / T3:0.85 / T4:0.6 / T5:0.5"
+  },
+  {
+   "critère territorial": "Ligne de bus",
+   "nature de la relation": "Contrainte mécanique (freinage, canalisation)",
+   "R1": "x 0.9",
+   "R2": "x 0.5",
+   "R3": "x 0.3",
+   "R4": "x 1"
+  },
+  {
+   "critère territorial": "Vitesse ≥ 50 km/h",
+   "nature de la relation": "Contrainte sécurité (contraste du marquage)",
+   "R1": "x 1",
+   "R2": "x 0.7",
+   "R3": "x 1",
+   "R4": "x 1"
+  },
+  {
+   "critère territorial": "Pente",
+   "nature de la relation": "Contrainte hydraulique",
+   "R1": "—",
+   "R2": "—",
+   "R3": "1 si ≤ 2 %, 0 à 6 %",
+   "R4": "—"
+  },
+  {
+   "critère territorial": "Zone inondable (moyen / extrême)",
+   "nature de la relation": "Contrainte hydrologique (nappe, colmatage)",
+   "R1": "—",
+   "R2": "—",
+   "R3": "x 0.3 / x 0.7",
+   "R4": "—"
+  },
+  {
+   "critère territorial": "Trafic tous véhicules",
+   "nature de la relation": "Durabilité (encrassement, colmatage)",
+   "R1": "—",
+   "R2": "x (1 − 0.3 · trafic norm.)",
+   "R3": "x (1 − 0.4 · trafic norm.)",
+   "R4": "—"
+  },
+  {
+   "critère territorial": "Petite surface (< 300 m²)",
+   "nature de la relation": "Logistique de chantier",
+   "R1": "—",
+   "R2": "—",
+   "R3": "—",
+   "R4": "x 0.8"
+  },
+  {
+   "critère territorial": "Besoin chaleur x insolation",
+   "nature de la relation": "Bénéfice thermique",
+   "R1": "τ · N_chaleur",
+   "R2": "τ · N_chaleur",
+   "R3": "τ · N_chaleur",
+   "R4": "τ · N_chaleur"
+  },
+  {
+   "critère territorial": "Vulnérabilité x insolation x chaleur",
+   "nature de la relation": "Bénéfice sanitaire",
+   "R1": "τ · N_santé",
+   "R2": "τ · N_santé",
+   "R3": "τ · N_santé",
+   "R4": "τ · N_santé"
+  },
+  {
+   "critère territorial": "Imperméabilisation du voisinage",
+   "nature de la relation": "Bénéfice hydrologique",
+   "R1": "π · N_eau",
+   "R2": "π · N_eau",
+   "R3": "π · N_eau",
+   "R4": "π · N_eau"
+  },
+  {
+   "critère territorial": "Surface de chantier",
+   "nature de la relation": "Bénéfice carbone",
+   "R1": "γ · (0,6 + 0,4 · surface norm.)",
+   "R2": "γ · (0,6 + 0,4 · surface norm.)",
+   "R3": "γ · (0,6 + 0,4 · surface norm.)",
+   "R4": "γ · (0,6 + 0,4 · surface norm.)"
+  },
+  {
+   "critère territorial": "Usages piétons, densité, apaisement",
+   "nature de la relation": "Bénéfice cadre de vie",
+   "R1": "(τ + bruit)/2 · N_usages",
+   "R2": "(τ + bruit)/2 · N_usages",
+   "R3": "(τ + bruit)/2 · N_usages",
+   "R4": "(τ + bruit)/2 · N_usages"
+  }
+ ]
+}

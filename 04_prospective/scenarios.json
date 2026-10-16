@@ -1,0 +1,86 @@
+{
+ "scenarios": {
+  "S0": {
+   "nom": "Tendanciel",
+   "couleur": "#8a8f98",
+   "recit": "Les revêtements biosourcés restent des opérations ponctuelles, sans ciblage territorial. La filière de liants végétaux progresse lentement.",
+   "part": [
+    2026,
+    0.05,
+    2050,
+    0.25
+   ],
+   "profil": null,
+   "anticipation": 0.0,
+   "mobilites": false,
+   "vegetalisation": false
+  },
+  "S1": {
+   "nom": "Adaptation ciblée",
+   "couleur": "#d9a441",
+   "recit": "Priorité à la santé face à la chaleur : les tronçons prioritaires du profil « adaptation » sont renouvelés par anticipation (2027-2032) avec le revêtement recommandé.",
+   "part": [
+    2026,
+    0.2,
+    2050,
+    0.6
+   ],
+   "profil": "adaptation",
+   "anticipation": 0.1,
+   "mobilites": false,
+   "vegetalisation": false
+  },
+  "S2": {
+   "nom": "Massification bas-carbone",
+   "couleur": "#2f6f4f",
+   "recit": "La filière industrielle des liants biosourcés se structure : 100 % des renouvellements en 2040, choix du revêtement guidé par le profil « bas-carbone ».",
+   "part": [
+    2026,
+    0.3,
+    2040,
+    1.0
+   ],
+   "profil": "bas_carbone",
+   "anticipation": 0.0,
+   "mobilites": false,
+   "vegetalisation": false
+  },
+  "S3": {
+   "nom": "Transition intégrée",
+   "couleur": "#3b7fb6",
+   "recit": "Sobriété des mobilités (−30 % de trafic, logistique allégée, apaisement généralisé des rues de desserte) et plan canopée ; déploiement ciblé et anticipé sur le profil « équilibré » réévalué tous les 5 ans.",
+   "part": [
+    2026,
+    0.25,
+    2045,
+    0.9
+   ],
+   "profil": "equilibre",
+   "anticipation": 0.1,
+   "mobilites": true,
+   "vegetalisation": true
+  }
+ },
+ "tracc": {
+  "2025": 1.8,
+  "2030": 2.0,
+  "2050": 2.7
+ },
+ "hypotheses": {
+  "renouvellement": "Couche de roulement renouvelée tous les 15 ans (conventionnel) ; phase initiale aléatoire par tronçon",
+  "epaisseur_couche_m": 0.06,
+  "densite_t_m3": 2.35,
+  "facteur_emission_reference_kgco2e_t": [
+   45,
+   55,
+   70
+  ],
+  "pluie_annuelle_m": 0.83,
+  "coef_ruissellement": [
+   0.9,
+   0.3
+  ],
+  "intensification_chaleur": "+30 % du besoin par °C de réchauffement TRACC au-delà de 2025",
+  "vieillissement": "+25 % de vulnérabilité en 2050 (part croissante des 65 ans et plus)"
+ }
+}

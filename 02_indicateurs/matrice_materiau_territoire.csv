@@ -1,0 +1,13 @@
+﻿critère territorial;nature de la relation;R1;R2;R3;R4
+Trafic poids lourds (classe T0-T5);Contrainte mécanique;T0:0.5 / T1:0.8 / T2:1 / T3:1 / T4:1 / T5:1;T0:0 / T1:0 / T2:0.25 / T3:0.6 / T4:1 / T5:1;T0:0 / T1:0 / T2:0.3 / T3:0.7 / T4:1 / T5:1;T0:1 / T1:1 / T2:1 / T3:0.85 / T4:0.6 / T5:0.5
+Ligne de bus;Contrainte mécanique (freinage, canalisation);x 0.9;x 0.5;x 0.3;x 1
+Vitesse ≥ 50 km/h;Contrainte sécurité (contraste du marquage);x 1;x 0.7;x 1;x 1
+Pente;Contrainte hydraulique;—;—;1 si ≤ 2 %, 0 à 6 %;—
+Zone inondable (moyen / extrême);Contrainte hydrologique (nappe, colmatage);—;—;x 0.3 / x 0.7;—
+Trafic tous véhicules;Durabilité (encrassement, colmatage);—;x (1 − 0.3 · trafic norm.);x (1 − 0.4 · trafic norm.);—
+Petite surface (< 300 m²);Logistique de chantier;—;—;—;x 0.8
+Besoin chaleur x insolation;Bénéfice thermique;τ · N_chaleur;τ · N_chaleur;τ · N_chaleur;τ · N_chaleur
+Vulnérabilité x insolation x chaleur;Bénéfice sanitaire;τ · N_santé;τ · N_santé;τ · N_santé;τ · N_santé
+Imperméabilisation du voisinage;Bénéfice hydrologique;π · N_eau;π · N_eau;π · N_eau;π · N_eau
+Surface de chantier;Bénéfice carbone;γ · (0,6 + 0,4 · surface norm.);γ · (0,6 + 0,4 · surface norm.);γ · (0,6 + 0,4 · surface norm.);γ · (0,6 + 0,4 · surface norm.)
+Usages piétons, densité, apaisement;Bénéfice cadre de vie;(τ + bruit)/2 · N_usages;(τ + bruit)/2 · N_usages;(τ + bruit)/2 · N_usages;(τ + bruit)/2 · N_usages

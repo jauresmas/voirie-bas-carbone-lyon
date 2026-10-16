@@ -1,0 +1,11 @@
+﻿enjeu;variation_poids;jaccard_top20;surface_sortante_m2
+Climat urbain (îlot de chaleur);-25%;0.922;40531
+Climat urbain (îlot de chaleur);+25%;0.933;34204
+Santé et vulnérabilité;-25%;0.923;39633
+Santé et vulnérabilité;+25%;0.943;28499
+Eau et sols (imperméabilisation);-25%;0.92;40590
+Eau et sols (imperméabilisation);+25%;0.894;54576
+Carbone (cycle de vie);-25%;0.987;6256
+Carbone (cycle de vie);+25%;0.995;1978
+Usages et cadre de vie;-25%;0.965;17143
+Usages et cadre de vie;+25%;0.967;16163

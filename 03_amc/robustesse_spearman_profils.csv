@@ -1,0 +1,6 @@
+﻿;equilibre;adaptation;bas_carbone;eau_sols;justice
+equilibre;1.0;0.907;-0.035;0.899;0.919
+adaptation;0.907;1.0;-0.258;0.919;0.992
+bas_carbone;-0.035;-0.258;1.0;-0.179;-0.242
+eau_sols;0.899;0.919;-0.179;1.0;0.929
+justice;0.919;0.992;-0.242;0.929;1.0

@@ -1,0 +1,6 @@
+﻿profil;acteur;Climat urbain (îlot de chaleur);Santé et vulnérabilité;Eau et sols (imperméabilisation);Carbone (cycle de vie);Usages et cadre de vie;lambda_max;ratio_coherence;coherent (RC<0,10)
+Équilibré;Comité de pilotage (référence);0.2;0.2;0.2;0.2;0.2;5.0;-0.0;oui
+Adaptation chaleur & santé;Direction climat / santé publique;0.348;0.348;0.12;0.065;0.12;5.005;0.001;oui
+Bas-carbone;Gestionnaire de voirie / plan climat;0.122;0.122;0.122;0.569;0.066;5.015;0.003;oui
+Eau & sols;Direction de l'eau / désimperméabilisation;0.156;0.156;0.451;0.081;0.156;5.004;0.001;oui
+Justice environnementale;Élus / politique de la ville;0.18;0.345;0.088;0.073;0.313;5.028;0.006;oui
