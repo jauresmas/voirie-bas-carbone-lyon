@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nos rues face à la chaleur · Lyon</title>
+<meta name="description" content="Où et comment refaire la chaussée des rues de Lyon pour qu'elle chauffe moins, absorbe la pluie et émette moins de CO₂ : une étude de recherche.">
+<meta name="theme-color" content="#0b1230">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b1230'/%3E%3Cpath d='M4 22 L13 13 L19 19 L28 10' fill='none' stroke='%23c98500' stroke-width='3.5' stroke-linecap='round'/%3E%3Ccircle cx='13' cy='13' r='4' fill='%230b1230' stroke='%23f4f6fb' stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="lib/maplibre-gl.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="skip" href="#ch-ma-rue">Aller directement à « Et ma rue ? »</a>
+
+<header class="topbar">
+  <a class="brand" href="#ch-depart" aria-label="Retour au début">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-text"><b>Lyon</b><span>Nos rues face à la chaleur</span></span>
+  </a>
+  <a class="btn btn-contour btn-petit lien-specialistes" href="../webmap/index.html">Version pour spécialistes</a>
+  <form class="search" id="search-top" role="search" autocomplete="off">
+    <label class="sr" for="q-top">Où est votre rue ?</label>
+    <input id="q-top" type="search" placeholder="Où est votre rue ?" aria-controls="sugg-top" aria-autocomplete="list">
+    <svg class="search-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
+    <ul class="sugg" id="sugg-top" role="listbox" hidden></ul>
+  </form>
+</header>
+
+<nav class="ligne-mobile" aria-label="Chapitres">
+  <ol id="ligne-mobile"></ol>
+</nav>
+
+<div class="layout">
+  <main class="recit" id="recit">
+    <div class="ligne" aria-hidden="true"><span class="anneau" id="anneau"></span></div>
+
+    <section class="chap depart" id="ch-depart" data-station="Départ" data-carte="reseau">
+      <h1><span class="dot" aria-hidden="true"></span>Nos rues<br>face à la<br>chaleur</h1>
+      <p class="lead">Où et comment refaire la chaussée des rues de Lyon pour qu'elle chauffe moins, absorbe mieux la pluie et émette moins de CO₂&nbsp;?</p>
+      <div class="actions">
+        <a class="btn btn-plein" href="#ch-chaleur">Commencer le trajet <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-contour" href="#ch-ma-rue">Trouver ma rue</a>
+      </div>
+      <p class="avert"><b>Étude de recherche, pas un programme de travaux.</b> Ces résultats viennent d'un projet de recherche. La Métropole de Lyon n'a pris aucune décision.</p>
+      <p class="reprise" id="reprise" hidden></p>
+    </section>
+
+    <section class="chap" id="ch-chaleur" data-station="Lyon a chaud" data-carte="chaleur">
+      <h2><span class="dot" aria-hidden="true"></span>Lyon a chaud</h2>
+      <p>En été, une chaussée sombre en plein soleil emmagasine la chaleur le jour et la rend la nuit. Certaines rues cumulent tout&nbsp;: bitume noir, pas d'arbres, immeubles serrés qui retiennent l'air chaud.</p>
+      <p class="chiffre"><span id="chaud-part">—</span><span>des chaussées de Lyon ont un besoin fort de rafraîchissement.</span></p>
+      <div class="duo" id="duo"></div>
+      <p class="note">La carte montre, rue par rue, l'exposition à la chaleur et l'absence d'ombre. Elle s'appuie sur les arbres d'alignement, la hauteur des immeubles et les zones climatiques de la Métropole et du Cerema.</p>
+    </section>
+
+    <section class="chap" id="ch-revetements" data-station="Quatre revêtements" data-carte="revetements">
+      <h2><span class="dot" aria-hidden="true"></span>Quatre façons de refaire une rue</h2>
+      <p>Quand une chaussée s'use, on refait sa couche de surface. Ce projet de recherche étudie des enrobés dont le liant vient du végétal plutôt que du pétrole. Chacun a ses atouts… et ses limites.</p>
+      <div class="lignes" id="lignes"></div>
+      <p class="note">Leurs performances sont encore des estimations&nbsp;: elles doivent être confirmées par des essais en laboratoire.</p>
+    </section>
+
+    <section class="chap" id="ch-commencer" data-station="Où commencer" data-carte="priorites">
+      <h2><span class="dot" aria-hidden="true"></span>Où commencer&nbsp;?</h2>
+      <p>On ne refait pas toutes les rues en même temps. Nous avons classé les rues selon la chaleur, les habitants les plus fragiles, la pluie, le carbone et la vie de quartier. Puis nous avons changé l'importance donnée à chacun de ces enjeux <b>3&nbsp;000 fois</b>.</p>
+      <p class="chiffre"><span id="robuste-ha">—</span><span id="robuste-txt">restent prioritaires presque à chaque fois.</span></p>
+      <div class="compo" id="compo"></div>
+      <p class="note">Trait épais&nbsp;: prioritaire au moins 8 fois sur 10. Trait fin&nbsp;: 5 à 8 fois sur 10.</p>
+    </section>
+
+    <section class="chap" id="ch-ma-rue" data-station="Et ma rue ?" data-carte="ma-rue">
+      <h2><span class="dot" aria-hidden="true"></span>Et ma rue&nbsp;?</h2>
+      <form class="search search-grande" id="search-main" role="search" autocomplete="off">
+        <label for="q-main">Tapez le nom de votre rue</label>
+        <input id="q-main" type="search" placeholder="Ex. : rue Bossuet, cours Lafayette…" aria-controls="sugg-main" aria-autocomplete="list">
+        <svg class="search-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
+        <ul class="sugg" id="sugg-main" role="listbox" hidden></ul>
+      </form>
+      <div id="fiche" class="fiche" aria-live="polite">
+        <p class="vide">Choisissez une rue, ou touchez-la sur la carte.</p>
+      </div>
+    </section>
+
+    <section class="chap" id="ch-2050" data-station="Lyon en 2050" data-carte="2050">
+      <h2><span class="dot" aria-hidden="true"></span>Lyon en 2050</h2>
+      <p>Les rues sont refaites environ tous les 15&nbsp;ans. À chaque chantier, on peut choisir un revêtement innovant. Deux stratégies s'opposent, une troisième les combine.</p>
+      <div class="choix" role="radiogroup" aria-label="Stratégie" id="strategies"></div>
+      <div class="annee">
+        <label for="an">Année</label>
+        <output id="an-out" for="an">2040</output>
+        <input id="an" type="range" min="2026" max="2050" step="1" value="2040">
+      </div>
+      <div class="bilan" id="bilan" aria-live="polite"></div>
+      <div class="graph" id="graph-co2"></div>
+    </section>
+
+    <section class="chap" id="ch-avis" data-station="Votre avis" data-carte="avis">
+      <h2><span class="dot" aria-hidden="true"></span>Votre avis</h2>
+      <form id="avis" class="avis">
+        <fieldset>
+          <legend>Pour refaire les rues de Lyon, qu'est-ce qui compte le plus pour vous&nbsp;? <span>Deux choix au plus.</span></legend>
+          <div id="avis-options"></div>
+        </fieldset>
+        <button class="btn btn-plein" type="submit" id="avis-envoyer" disabled>Donner mon avis</button>
+      </form>
+      <div class="resultats" id="avis-resultats" aria-live="polite"></div>
+      <p class="note">Les réponses restent sur cet appareil&nbsp;: rien n'est envoyé sur internet. Elles servent à montrer, sur la carte, les rues prioritaires selon les avis recueillis ici.</p>
+    </section>
+
+    <section class="chap terminus" id="ch-terminus" data-station="Terminus" data-carte="reseau">
+      <h2><span class="dot" aria-hidden="true"></span>Ce qu'on ne sait pas encore</h2>
+      <ul class="limites">
+        <li><b>Les matériaux doivent être testés.</b> La blancheur réelle de l'enrobé clair, et la façon dont elle résiste à la saleté, comptent plus que tout le reste.</li>
+        <li><b>On ne connaît pas l'âge exact des chaussées.</b> Le calendrier des travaux est une simulation.</li>
+        <li><b>La chaleur est estimée, pas mesurée</b> rue par rue. Des capteurs pourraient le confirmer.</li>
+        <li><b>Le sous-sol n'est pas connu partout.</b> Il faut vérifier qu'il laisse passer l'eau avant de poser un enrobé drainant.</li>
+      </ul>
+      <p class="avert"><b>Étude de recherche.</b> Aucune décision de la Métropole de Lyon. Données&nbsp;: Métropole de Lyon, IGN, INSEE, Cerema, Géorisques.</p>
+      <p><a class="btn btn-contour" href="../webmap/index.html">Version pour spécialistes</a></p>
+    </section>
+  </main>
+
+  <div class="carte-col">
+    <div id="carte" class="carte" role="region" aria-label="Carte des rues de Lyon"></div>
+    <div class="legende" id="legende"></div>
+    <div class="bulle" id="bulle" hidden></div>
+    <p class="credit">Fond IGN · Données Métropole de Lyon, IGN, INSEE, Cerema</p>
+  </div>
+</div>
+
+<div class="chargement" id="chargement"><span class="anneau-charge"></span><p>Chargement des rues de Lyon…</p></div>
+
+<script src="lib/maplibre-gl.js"></script>
+<script src="lib/d3.min.js"></script>
+<script src="data/chiffres.js"></script>
+<script src="data/contexte.js"></script>
+<script src="data/index_rues.js"></script>
+<script src="data/rues.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
