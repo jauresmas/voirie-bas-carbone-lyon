@@ -2,6 +2,8 @@
 
 Outil SIG et analyse multicritère pour identifier où, et avec quel revêtement biosourcé, renouveler la voirie de Lyon. Il intègre des tests de robustesse et une prospective 2030-2050.
 
+**Voir en ligne :** [accueil](https://jauresmas.github.io/voirie-bas-carbone-lyon/) · [version grand public](https://jauresmas.github.io/voirie-bas-carbone-lyon/grand-public/) · [carte de séminaire](https://jauresmas.github.io/voirie-bas-carbone-lyon/webmap/)
+
 Le projet comprend deux cartes web :
 - une carte de séminaire pour présenter la méthode ;
 - une version grand public pour les habitants.
